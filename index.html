@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <!---Start header section--->
+    <header id="header" class="header">
+      <div class="head-top">
+        <div class="site-name">
+          <span>G.Claudia</span>
+        </div>
+        <div class="site-nav">
+          <span id="nav-btn"> Meniul <i class="fa fa-bars"></i> </span>
+        </div>
+      </div>
+      <div class="head-bottom flex">
+        <h2>E timpul sa te relaxezi!</h2>
+        <p>
+          Într-un hotel te simți ca acasă, dar cu adăugarea unei atmosfere de
+          vacanță, unde fiecare zi este o aventură și fiecare răsărit de soare
+          aduce promisiunea unei noi experiențe.
+        </p>
+        <button type="button" class="head-btn">Incepe</button>
+      </div>
+    </header>
+    <!---End header section--->
+
+    <!---Start navbar section-->
+    <div class="sidenav" id="sidenav">
+      <span class="cancel-btn" id="cancel-btn">
+        <i class="fas fa-times"></i>
+      </span>
+      <ul class="navbar">
+        <li><a href="#header">Acasa</a></li>
+        <li><a href="#services">Servicii</a></li>
+        <li><a href="#rooms">Camere</a></li>
+        <li><a href="#customers">Clienti</a></li>
+      </ul>
+      <button class="btn sign -up">Inscrie-te</button>
+      <button class="btn log-in">Logheaza-te</button>
+    </div>
+    <!---End navbar section-->
+
+    <!---Start Fullscreen modal section--->
+    <div id="modal"></div>
+    <!---End fullscreen modal section--->
+
+    <!---Start body content section--->
+    <section class="services sec-width" id="services">
+      <div class="title">
+        <h2>servicii</h2>
+      </div>
+      <div class="services-container">
+        <!--single service-->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-utensils"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Servicii alimentare/Preparate reci</h2>
+            <p>
+              Veţi avea parte de o experienţă deosebită, un serviciu excepţional
+              şi toate ingredientele necesare unei extravaganţe culinare,
+              pornind de la gustare, până la desert, toate într-o ambianţă de
+              neuitat.
+            </p>
+            <button type="button" class="btn">Afla mai multe</button>
+          </div>
+        </article>
+        <!--End of single service -->
+        <!--single service-->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fa-solid fa-person-swimming"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Relaxare</h2>
+            <p>
+              Aici regasesti un ambient liniștitor, evidențiat de o temă
+              zodiacală unică , un acoperiș de sticlă uimitor deasupra piscinei
+              de 50 de metri pătrați ,sau un decor modern, cu o zonă cu apă
+              sărată de 130 metri pătrați și acces în aer liber cu zona de
+              șezlonguri și jacuzzi.
+            </p>
+            <button type="button" class="btn">Afla mai multe</button>
+          </div>
+        </article>
+        <!--End of single service -->
+        <!--single service-->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-broom"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Menaj</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis minus autem vero molestiae reprehenderit laudantium
+              est ratione perspiciatis earum ea iure, quos dolores dicta atque
+              ab optio accusantium facere quidem ducimus, voluptatibus
+              reiciendis? Consequuntur doloremque beatae expedita modi, commodi
+              voluptatem?
+            </p>
+            <button type="button" class="btn">Afla mai multe</button>
+          </div>
+        </article>
+        <!--End of single service -->
+        <!--single service-->
+        <article class="service">
+          <div class="service-icon">
+            <span>
+              <i class="fas fa-door-closed"></i>
+            </span>
+          </div>
+          <div class="service-content">
+            <h2>Siguranta camerei</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis minus autem vero molestiae reprehenderit laudantium
+              est ratione perspiciatis earum ea iure, quos dolores dicta atque
+              ab optio accusantium facere quidem ducimus, voluptatibus
+              reiciendis? Consequuntur doloremque beatae expedita modi, commodi
+              voluptatem?
+            </p>
+            <button type="button" class="btn">Afla mai multe</button>
+          </div>
+        </article>
+        <!--End of single service -->
+      </div>
+    </section>
+    <div class="book">
+      <form class="book-form">
+        <div class="form-item">
+          <label for="checkin-date">Check In Date:</label>
+          <input type="date" id="chekin-date" />
+        </div>
+        <div class="form-item">
+          <label for="checkout-date">Check Out Date:</label>
+          <input type="date" id="chekin-date" />
+        </div>
+        <div class="form-item">
+          <label for="adul">Adulti:</label>
+          <input type="number" min="1" value="1" id="adult" />
+        </div>
+        <div class="form-item">
+          <label for="children">Copii:</label>
+          <input type="number" min="1" value="1" id="children" />
+        </div>
+        <div class="form-item">
+          <label for="rooms">Camere:</label>
+          <input type="number" min="1" value="1" id="roms" />
+        </div>
+        <div class="form-item">
+          <input type="submit" class="btn" value="Rezerva acum" />
+        </div>
+      </form>
+    </div>
+    <section class="rooms sec-width" id="rooms">
+      <div class="title">
+        <h2>camere</h2>
+      </div>
+      <div class="rooms-container">
+        <!----single room------>
+        <article class="room">
+          <div class="room-image">
+            <img src="img/img1.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Camera dubla Deluxe</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                minibar
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Wireless Internet
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Cablu/Satelit Tv
+              </li>
+            </ul>
+            <p>
+              Camera Dublă Deluxe, cu o suprafață de aproximativ 25 mp, dispune
+              de un pat matrimonial si un fotoliu extensibil , se distinge prin
+              unicitate, eleganță și rafinament, satisfăcând și cele mai
+              exigente cerințe
+            </p>
+            <p>
+              Camerele noastre au fost atent proiectate, urmărindu-se în
+              principal funcționalitatea și confortul oferite oaspeților noștri.
+            </p>
+            <p class="rate"><span>$99.00/</span> Per Noapte</p>
+            <button type="botton" class="btn">rezerva acum</button>
+          </div>
+        </article>
+        <!----end of single room----->
+        <!----single room------>
+        <article class="room">
+          <div class="room-image">
+            <img src="img/img2.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Camera de lux</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                minibar
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Wireless Internet
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Cavlu/Satelit Tv
+              </li>
+            </ul>
+            <p>
+              Camera Executive Junior Suite ,cu o suprafață de aproximativ 40-45
+              mp,dispune de un pat matrimonial si o canapea extensibila, se
+              distinge prin unicitate, eleganță şi rafinament, satisfăcând şi
+              cele mai exigente cerinţe.
+            </p>
+            <p>
+              Bucuraţi-vă de un somn odihnitor, într-un microclimat elegant, cu
+              mobilier din lemn în culori calde.
+            </p>
+            <p class="rate"><span>$99.00/</span> Per Noapte</p>
+            <button type="botton" class="btn">rezerva acum</button>
+          </div>
+        </article>
+        <!----end of single room----->
+        <!----single room------>
+        <article class="room">
+          <div class="room-image">
+            <img src="img/img3.jpg" alt="room image" />
+          </div>
+          <div class="room-text">
+            <h3>Camera de lux</h3>
+            <ul>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                minibar
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Wireless Internet
+              </li>
+              <li>
+                <i class="fas fa-arrow-alt-circle-right"></i>
+                Cablu/Sateli Tv
+              </li>
+            </ul>
+            <p>
+              Camera Duble Junior ,dispune de un pat matrimonial si o canapea
+              extensibila, se distinge prin unicitate, eleganță şi rafinament,
+              satisfăcând şi cele mai exigente cerinţe.
+            </p>
+            <p>
+              Bucuraţi-vă de un somn odihnitor, într-un microclimat elegant, cu
+              mobilier din lemn în culori calde.
+            </p>
+            <p class="rate"><span>$99.00/</span> Per Noapte</p>
+            <button type="botton" class="btn">rezerva acum</button>
+          </div>
+        </article>
+        <!----end of single room----->
+      </div>
+    </section>
+    <section class="customers" id="customers">
+      <div class="sec-width">
+        <div class="title">
+          <h2>Recenzii</h2>
+        </div>
+        <div class="customers-container">
+          <!---single customer---->
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Super hotel!</h3>
+            <p>
+              Am fost foarte mulțumită de serviciile oferite, de la Recepționeri
+              pana la curățenie, servicii de alimentație . Personalul hotelului
+              cu care am interacționat este format dintr-o echipa de oameni
+              foarte drăguți, deosebit de amabili și dedicați .
+            </p>
+            <img src="img/cus-1.jpg" alt="imaginea clientului" />
+            <span>Tabarcea Ilie, Tara de Jos</span>
+          </div>
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Sedere relaxanta</h3>
+            <p>
+              A fost al treilea sejur in acest hotel,de fiecare data am revenit
+              cu placere. Micul dejun foarte bun, hotelul curat, cu personal
+              foarte amabil si competent, camera foarte spatioasa, baia la fel.
+            </p>
+            <img src="img/cus-2.jpg" alt="imaginea clientului" />
+            <span>Cin Ciun La, China</span>
+          </div>
+          <div class="customer">
+            <div class="rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <h3>Loc placut</h3>
+            <p>
+              Cu siguranta voi mai reveni!! Totul la superlativ! Domnișoara de
+              la receptie extrem de amabila și check-in-ul a mers foarte repede.
+              Mereu cu zâmbetul pe buze și ne a placut acest lucru! Camera mare
+              spațioasă, curatenie impecabila
+            </p>
+            <img src="img/cus-3.jpg" alt="imaginea clientului" />
+            <span>Tabarcea Ilie, Tara de Jos</span>
+          </div>
+          <!----end of the single customer---->
+        </div>
+      </div>
+    </section>
+    <!---End body content section--->
+
+    <!---Start footer section--->
+    <footer>
+      <footer class="footer" id="footer">
+        <div class="footer-container">
+          <div>
+            <h2>Despre noi</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium magnam unde totam praesentium ipsam omnis dolor harum
+              obcaecati nulla qui.
+            </p>
+            <ul class="social-icons">
+              <li class="flex">
+                <i class="fa fa-twitter fa-2x"></i>
+              </li>
+              <li class="flex">
+                <i class="fa fa-facebook fa-2x"></i>
+              </li>
+              <li class="flex">
+                <i class="fa fa-instagram fa-2x"></i>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Link-uri utile</h2>
+            <a href="">Blog</a>
+            <a href="">Rooms</a>
+            <a href="">Subscription</a>
+            <a href="">Gift Card</a>
+          </div>
+          <div>
+            <h2>Privat</h2>
+            <a href="">Cariera</a>
+            <a href="">Despre noi</a>
+            <a href="">Contacteaza-ne</a>
+            <a href="">Servicii</a>
+          </div>
+          <div>
+            <h2>Ai vre-o intrebare?</h2>
+            <div class="contact-item">
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              <span> 104 Calea Romanului, Bacau, Romania </span>
+            </div>
+            <div class="contact-item">
+              <span>
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span> 0123456789</span>
+            </div>
+            <div class="contact-item">
+              <span>
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span> info@acasa.com</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <!----End footer section--->
+    <script
+      src="https://kit.fontawesome.com/3b081cb6d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="site.js"></script>
+  </body>
+</html>
